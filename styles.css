@@ -9,47 +9,81 @@ html, body {
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   background: #fafafa;
-  color: #333;
+  color: #222;
 }
 
-/* Header */
+/* =========================
+   COLOR VARIABLES
+   ========================= */
+:root {
+  --navy: #0b1c2d;
+  --red: #b11226;
+}
+
+/* =========================
+   HEADER
+   ========================= */
 .site-header {
-  background: #2b2b2b;
+  background: var(--navy);
   color: #fff;
   text-align: center;
-  padding: 36px 20px;
+
+  padding: 80px 20px 70px; /* more top padding */
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 34px;
+  font-family: "Libre Bodoni", serif;
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .site-header p {
-  margin-top: 8px;
+  margin-top: 16px;
   font-size: 15px;
-  opacity: 0.9;
+  color: #f0f0f0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-/* GRID CONTAINER */
+/* Red accent underline */
+.site-header p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--red);
+  margin: 18px auto 0;
+}
+
+/* =========================
+   PRODUCT GRID
+   ========================= */
 .products {
   max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row */
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
 }
 
-/* PRODUCT TILE */
+/* =========================
+   PRODUCT TILE
+   ========================= */
 .product {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
 }
 
-/* IMAGE */
+/* =========================
+   IMAGE
+   ========================= */
 .product img {
   width: 100%;
   max-height: 520px;
@@ -58,23 +92,33 @@ html, body {
   margin: auto;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+   ========================= */
 .site-footer {
-  background: #2b2b2b;
+  background: var(--navy);
   color: #fff;
   text-align: center;
-  padding: 18px;
+  padding: 22px;
   font-size: 13px;
+  letter-spacing: 0.5px;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+   ========================= */
 @media (max-width: 768px) {
   .products {
-    grid-template-columns: 1fr; /* 1 per row */
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 40px 16px;
   }
 
   .product img {
     max-height: 420px;
+  }
+
+  .site-header h1 {
+    font-size: 36px;
   }
 }
