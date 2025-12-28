@@ -7,91 +7,68 @@
 
   <style>
     body {
-      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f6f8;
+      background: #fafafa;
       color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+      background: #2b2b2b;
       color: #fff;
-      padding: 35px 20px;
+      padding: 24px;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    header p {
-      margin-top: 8px;
-      opacity: 0.9;
-    }
-
     section {
-      padding: 60px 20px;
+      padding: 40px 20px;
       max-width: 1200px;
       margin: auto;
     }
 
     h2 {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 45px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
     }
 
     /* GRID */
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
     }
 
-    /* CARD TILE */
+    /* CARD */
     .card {
       background: #fff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
       display: flex;
-      flex-direction: column;
+      gap: 14px;
+      align-items: flex-start;
     }
 
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
-    }
-
+    /* IMAGE (SMALL & NEAT) */
     .card img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      background: #fafafa;
+      width: 80px;
+      height: 100px;
+      object-fit: contain;
+      background: #f5f5f5;
+      border-radius: 6px;
+      flex-shrink: 0;
     }
 
-    .card-content {
-      padding: 22px;
-      flex: 1;
+    .card-content h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
     }
 
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .card p {
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 6px 0;
-      color: #555;
-    }
-
-    .card p strong {
-      color: #333;
+    .card-content p {
+      margin: 4px 0;
+      font-size: 13px;
+      line-height: 1.4;
     }
 
     footer {
@@ -99,7 +76,7 @@
       color: #fff;
       text-align: center;
       padding: 20px;
-      margin-top: 70px;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -117,97 +94,57 @@
   <div class="products">
 
     <div class="card">
-      <img src="images/IBB09.png" alt="Bonded Sports Bra IBB09">
+      <img src="images/IBB09.png" alt="IBB09">
       <div class="card-content">
         <h3>Bonded Sports Bra – Racer Back (IBB09)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Full coverage, moulded double layered cup, lightly padded, non-wired racerback minimizer support.</p>
+        <p>Full coverage, moulded cups, lightly padded, racerback minimizer support.</p>
         <p><strong>Sizes:</strong> S – 2XL | <strong>Colors:</strong> Navy, Coral</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/IBB10.png" alt="Bonded Sports Bra IBB10">
+      <img src="images/IBB10.png" alt="IBB10">
       <div class="card-content">
         <h3>Bonded Sports Bra – Vest (IBB10)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Minimizer vest style bra with full coverage and moulded cups.</p>
-        <p><strong>Sizes:</strong> S – 2XL | <strong>Colors:</strong> Navy, Coral</p>
+        <p>Vest style minimizer bra with full coverage and comfort fit.</p>
+        <p><strong>Sizes:</strong> S – 2XL</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/INP08.png" alt="Natural Dyed Hipster Panty INP08">
+      <img src="images/INP08.png" alt="INP08">
       <div class="card-content">
         <h3>Natural Dyed Hipster Panty (INP08)</h3>
         <p><strong>Fabric:</strong> 95% Cotton, 5% Elastane</p>
         <p>100% plant-based natural dyed, chemical-free finish.</p>
-        <p><strong>Sizes:</strong> S – 2XL | <strong>Packs:</strong> Multi-color</p>
+        <p><strong>Sizes:</strong> S – 2XL</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/ISB01.png" alt="Sports Bra ISB01">
+      <img src="images/ISB01.png" alt="ISB01">
       <div class="card-content">
         <h3>Sports Bra Racerback Shaper (ISB01)</h3>
         <p><strong>Fabric:</strong> 87% Polyester, 13% Elastane</p>
-        <p>Medium support, removable cookies, breathable quick-dry.</p>
+        <p>Medium support, removable cookies, quick-dry fabric.</p>
         <p><strong>Sizes:</strong> XS – XL</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/ISB02.png" alt="Sports Bra ISB02">
+      <img src="images/ITS04.png" alt="ITS04">
       <div class="card-content">
-        <h3>Sports Bra Vest Shaper (ISB02)</h3>
-        <p><strong>Fabric:</strong> 87% Polyester, 13% Elastane</p>
-        <p>Medium support vest style sports bra.</p>
-        <p><strong>Sizes:</strong> XS – XL</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/ISB03.png" alt="Sports Bra ISB03">
-      <div class="card-content">
-        <h3>Sports Bra Cotton Stretch (ISB03)</h3>
+        <h3>T-Shirt Bra (ITS04)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Non-padded, non-wired vest bra with wider straps.</p>
-        <p><strong>Sizes:</strong> S – XL</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/ITS04.png" alt="T Shirt Bra ITS04">
-      <div class="card-content">
-        <h3>T Shirt Bra (ITS04)</h3>
-        <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Medium coverage moulded cups with smooth support.</p>
+        <p>Medium coverage, moulded cups for smooth look.</p>
         <p><strong>Sizes:</strong> 32B – 38B, 34C – 36C</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/ISS05.png" alt="Side Support Bra ISS05">
-      <div class="card-content">
-        <h3>Side Support Bra (ISS05)</h3>
-        <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Side support stitching with adjustable straps.</p>
-        <p><strong>Sizes:</strong> 32B – 38B, 34C – 36C</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/IWE06.png" alt="Everyday Bra IWE06">
-      <div class="card-content">
-        <h3>Wear Everyday Bra (IWE06)</h3>
-        <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Full coverage everyday comfort with moulded cups.</p>
-        <p><strong>Sizes:</strong> 32B – 38B, 34C – 36C</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/INB07.png" alt="Nursing Bra INB07">
+      <img src="images/INB07.png" alt="INB07">
       <div class="card-content">
         <h3>Nursing Bra (INB07)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
@@ -221,8 +158,8 @@
 
 <section>
   <h2>Contact Us</h2>
-  <p style="text-align:center;">Email: info@intiyastyles.com</p>
-  <p style="text-align:center;">Phone: +91-XXXXXXXXXX</p>
+  <p>Email: info@intiyastyles.com</p>
+  <p>Phone: +91-XXXXXXXXXX</p>
 </section>
 
 <footer>
