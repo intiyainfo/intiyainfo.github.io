@@ -1,177 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intiya Styles – Comfort Wear</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Intiya Styles – Comfort Wear</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
 
-    header {
-      background: #2b2b2b;
-      color: #fff;
-      padding: 24px;
-      text-align: center;
-    }
+  header {
+    background: #2b2b2b;
+    color: #fff;
+    padding: 24px;
+    text-align: center;
+  }
 
-    section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+  section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-    /* GRID */
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-    }
+  /* GRID */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 26px;
+  }
 
-    /* TILE CARD */
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
+  /* TILE */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
-    }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+  }
 
-    /* FULL IMAGE */
-    .card img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      display: block;
-      background: #eee;
-    }
+  .card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    background: #eee;
+  }
 
-    /* CONTENT */
-    .card-content {
-      padding: 18px;
-    }
+  .card h3 {
+    padding: 14px;
+    margin: 0;
+    font-size: 16px;
+  }
 
-    .card-content h3 {
-      margin: 0 0 8px;
-      font-size: 17px;
-    }
-
-    .card-content p {
-      margin: 6px 0;
-      font-size: 14px;
-      line-height: 1.5;
-      color: #555;
-    }
-
-    footer {
-      background: #2b2b2b;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Intiya Styles</h1>
-  <p>Everyday Comfort • Innovative Fabrics • Perfect Fit</p>
-</header>
-
-<section>
-  <h2>Our Products</h2>
-
-  <div class="products">
-
-    <div class="card">
-      <img src="images/IBB09.png" alt="Bonded Sports Bra IBB09">
-      <div class="card-content">
-        <h3>Bonded Sports Bra – Racer Back (IBB09)</h3>
-        <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Full coverage, moulded double layered cup, lightly padded, non-wired racerback minimizer support.</p>
-        <p><strong>Sizes:</strong> S – 2XL | <strong>Colors:</strong> Navy, Coral</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/IBB10.png" alt="Bonded Sports Bra IBB10">
-      <div class="card-content">
-        <h3>Bonded Sports Bra – Vest (IBB10)</h3>
-        <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Minimizer vest style bra with full coverage and comfort fit.</p>
-        <p><strong>Sizes:</strong> S – 2XL</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/INP08.png" alt="Natural Dyed Hipster Panty INP08">
-      <div class="card-content">
-        <h3>Natural Dyed Hipster Panty (INP08)</h3>
-        <p><strong>Fabric:</strong> 95% Cotton, 5% Elastane</p>
-        <p>100% plant-based natural dyed, chemical-free finish.</p>
-        <p><strong>Sizes:</strong> S – 2XL</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/ISB01.png" alt="Sports Bra ISB01">
-      <div class="card-content">
-        <h3>Sports Bra Racerback Shaper (ISB01)</h3>
-        <p><strong>Fabric:</strong> 87% Polyester, 13% Elastane</p>
-        <p>Medium support, removable cookies, breathable quick-dry fabric.</p>
-        <p><strong>Sizes:</strong> XS – XL</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/ITS04.png" alt="T-Shirt Bra ITS04">
-      <div class="card-content">
-        <h3>T-Shirt Bra (ITS04)</h3>
-        <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Medium coverage, moulded cups for a smooth look.</p>
-        <p><strong>Sizes:</strong> 32B – 38B, 34C – 36C</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/INB07.png" alt="Nursing Bra INB07">
-      <div class="card-content">
-        <h3>Nursing Bra (INB07)</h3>
-        <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Front opening nursing bra with dart seams for support.</p>
-        <p><strong>Sizes:</strong> 34C – 40C | <strong>Color:</strong> Skin</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2>Contact Us</h2>
-  <p style="text-align:center;">Email: info@intiyastyles.com</p>
-  <p style="text-align:center;">Phone: +91-XXXXXXXXXX</p>
-</section>
-
-<footer>
-  <p>© 2025 Intiya Styles. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+  /* MODAL */
+  .modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content:
