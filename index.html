@@ -9,7 +9,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #fafafa;
+      background: #f4f4f4;
       color: #333;
     }
 
@@ -21,54 +21,61 @@
     }
 
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
 
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 40px;
     }
 
     /* GRID */
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
     }
 
-    /* CARD */
+    /* TILE CARD */
     .card {
       background: #fff;
-      padding: 16px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-    /* IMAGE (SMALL & NEAT) */
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* FULL IMAGE */
     .card img {
-      width: 80px;
-      height: 100px;
-      object-fit: contain;
-      background: #f5f5f5;
-      border-radius: 6px;
-      flex-shrink: 0;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      background: #eee;
+    }
+
+    /* CONTENT */
+    .card-content {
+      padding: 18px;
     }
 
     .card-content h3 {
-      margin: 0 0 6px;
-      font-size: 16px;
+      margin: 0 0 8px;
+      font-size: 17px;
     }
 
     .card-content p {
-      margin: 4px 0;
-      font-size: 13px;
-      line-height: 1.4;
+      margin: 6px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
     }
 
     footer {
@@ -76,7 +83,7 @@
       color: #fff;
       text-align: center;
       padding: 20px;
-      margin-top: 50px;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -94,27 +101,27 @@
   <div class="products">
 
     <div class="card">
-      <img src="images/IBB09.png" alt="IBB09">
+      <img src="images/IBB09.png" alt="Bonded Sports Bra IBB09">
       <div class="card-content">
         <h3>Bonded Sports Bra – Racer Back (IBB09)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Full coverage, moulded cups, lightly padded, racerback minimizer support.</p>
+        <p>Full coverage, moulded double layered cup, lightly padded, non-wired racerback minimizer support.</p>
         <p><strong>Sizes:</strong> S – 2XL | <strong>Colors:</strong> Navy, Coral</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/IBB10.png" alt="IBB10">
+      <img src="images/IBB10.png" alt="Bonded Sports Bra IBB10">
       <div class="card-content">
         <h3>Bonded Sports Bra – Vest (IBB10)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Vest style minimizer bra with full coverage and comfort fit.</p>
+        <p>Minimizer vest style bra with full coverage and comfort fit.</p>
         <p><strong>Sizes:</strong> S – 2XL</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/INP08.png" alt="INP08">
+      <img src="images/INP08.png" alt="Natural Dyed Hipster Panty INP08">
       <div class="card-content">
         <h3>Natural Dyed Hipster Panty (INP08)</h3>
         <p><strong>Fabric:</strong> 95% Cotton, 5% Elastane</p>
@@ -124,31 +131,31 @@
     </div>
 
     <div class="card">
-      <img src="images/ISB01.png" alt="ISB01">
+      <img src="images/ISB01.png" alt="Sports Bra ISB01">
       <div class="card-content">
         <h3>Sports Bra Racerback Shaper (ISB01)</h3>
         <p><strong>Fabric:</strong> 87% Polyester, 13% Elastane</p>
-        <p>Medium support, removable cookies, quick-dry fabric.</p>
+        <p>Medium support, removable cookies, breathable quick-dry fabric.</p>
         <p><strong>Sizes:</strong> XS – XL</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/ITS04.png" alt="ITS04">
+      <img src="images/ITS04.png" alt="T-Shirt Bra ITS04">
       <div class="card-content">
         <h3>T-Shirt Bra (ITS04)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Medium coverage, moulded cups for smooth look.</p>
+        <p>Medium coverage, moulded cups for a smooth look.</p>
         <p><strong>Sizes:</strong> 32B – 38B, 34C – 36C</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/INB07.png" alt="INB07">
+      <img src="images/INB07.png" alt="Nursing Bra INB07">
       <div class="card-content">
         <h3>Nursing Bra (INB07)</h3>
         <p><strong>Fabric:</strong> 92% Cotton, 8% Elastane</p>
-        <p>Front opening nursing bra with dart seams.</p>
+        <p>Front opening nursing bra with dart seams for support.</p>
         <p><strong>Sizes:</strong> 34C – 40C | <strong>Color:</strong> Skin</p>
       </div>
     </div>
@@ -158,8 +165,8 @@
 
 <section>
   <h2>Contact Us</h2>
-  <p>Email: info@intiyastyles.com</p>
-  <p>Phone: +91-XXXXXXXXXX</p>
+  <p style="text-align:center;">Email: info@intiyastyles.com</p>
+  <p style="text-align:center;">Phone: +91-XXXXXXXXXX</p>
 </section>
 
 <footer>
