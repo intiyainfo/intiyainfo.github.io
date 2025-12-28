@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #333;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   background: #fafafa;
+  color: #333;
 }
 
 /* Header */
@@ -14,64 +17,61 @@ body {
   background: #2b2b2b;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 36px 20px;
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 34px;
 }
 
 .site-header p {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 8px;
+  font-size: 15px;
   opacity: 0.9;
 }
 
-/* Main container */
+/* Container */
 .products {
-  max-width: 1100px;
+  max-width: 980px;   /* CRITICAL FIX */
   margin: auto;
   padding: 40px 20px;
 }
 
-/* Product section */
+/* Product row */
 .product {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 32px;
   align-items: center;
-  margin-bottom: 70px;
-  padding-bottom: 70px;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 50px 0;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .product:last-child {
   border-bottom: none;
-  padding-bottom: 0;
 }
 
-/* Image sizing FIX */
+/* Image control */
 .product img {
   width: 100%;
-  max-height: 380px;       /* balanced tile size */
-  object-fit: contain;    /* show full image */
-  background: #ffffff;
-  padding: 12px;
-  border-radius: 8px;
+  max-height: 340px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 /* Text */
 .details h2 {
-  margin: 0 0 12px;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 10px;
 }
 
 .details p {
-  margin: 8px 0;
-  line-height: 1.6;
   font-size: 15px;
+  line-height: 1.6;
+  margin: 6px 0;
 }
 
 /* Footer */
@@ -79,18 +79,18 @@ body {
   background: #2b2b2b;
   color: #fff;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 18px;
+  font-size: 13px;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .product {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 24px;
   }
 
   .product img {
-    max-height: 300px;
+    max-height: 280px;
   }
 }
