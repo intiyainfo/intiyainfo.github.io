@@ -1,67 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #222;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background: #fafafa;
 }
 
-header {
-  padding: 30px;
+.site-header {
+  background: #2b2b2b;
+  color: #fff;
   text-align: center;
-  border-bottom: 2px solid #ddd;
+  padding: 40px 20px;
 }
 
-.catalog {
-  max-width: 1000px;
+.site-header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.site-header p {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.products {
+  max-width: 1100px;
   margin: auto;
   padding: 40px 20px;
 }
 
 .product {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 30px;
-  padding: 30px 0;
-  border-bottom: 1px solid #ddd;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+  align-items: center;
 }
 
 .product img {
   width: 100%;
-  object-fit: contain;
-  background: #f7f7f7;
+  height: auto;
+  border-radius: 8px;
 }
 
-.info h2 {
-  margin: 0;
-  font-size: 22px;
+.details h2 {
+  margin-top: 0;
+  font-size: 26px;
 }
 
-.info h2 span {
-  font-weight: normal;
-  color: #666;
-  font-size: 16px;
+.details p {
+  line-height: 1.6;
+  margin: 10px 0;
 }
 
-.info h4 {
-  margin: 6px 0 12px;
-  font-weight: normal;
-  color: #444;
+.site-footer {
+  background: #2b2b2b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
 
-.fabric {
-  font-weight: bold;
-  margin-bottom: 14px;
-}
-
-ul {
-  padding-left: 18px;
-  margin: 0 0 14px;
-}
-
-ul li {
-  margin-bottom: 6px;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
   .product {
     grid-template-columns: 1fr;
